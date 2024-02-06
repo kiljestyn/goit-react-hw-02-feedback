@@ -3,6 +3,7 @@ import Statistics from "./Statistics/Statistics";
 import Section from "./Section/Section";
 import FeedbackOptions from "./FeedbaclOptions/FeedbackOptions";
 import Notification from "./Notificiations/Notificiations";
+import css from "./app.module.css"
 
 
 export class App extends Component {
@@ -32,11 +33,14 @@ export class App extends Component {
     const options = Object.keys(this.state);
     
     return (
+      <div className={css.appContainer}>
       <Section title="Please leave your feedback">
       <FeedbackOptions
         handleFeedback={this.handleFeedback}
         options={options}
       />
+      </Section>
+      <Section>
       {total > 0 ? (
         <Statistics
           good={good}
@@ -49,6 +53,7 @@ export class App extends Component {
         <Notification message="There is no feedback" />
       )}
     </Section>
+    </div>
     );
   }
 }

@@ -1,0 +1,14 @@
+.appContainer {
+    display: flex;
+    flex-direction: column;
+  border-radius: 10px;
+  max-width: 1200px;
+  height: 700px;
+  margin: 25px auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 13px 10px 20px 10px rgba(0, 0, 0, 0.78);
+  -webkit-box-shadow: 13px 10px 20px 10px rgba(0, 0, 0, 0.78);
+  -moz-box-shadow: 13px 10px 20px 10px rgba(0, 0, 0, 0.78);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url('/src/components/img/coffe-img.jpg');
+}
